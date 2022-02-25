@@ -1,0 +1,149 @@
+@media (max-width: 1440px) {
+  body {
+    margin: 0vw;
+    padding: 0vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+  }
+  body .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    width: 100%;
+    height: 8vw;
+    z-index: 5;
+    margin: 0vw;
+    padding: 0vw;
+  }
+  body .header .empresa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    text-decoration: none;
+    z-index: 1;
+    margin: auto 0vw;
+  }
+  body .header .empresa a {
+    cursor: pointer;
+  }
+  body .header .empresa a .logoBookmark {
+    height: 2vw;
+    margin: auto;
+  }
+  body .header .navegacion {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto 0vw;
+    height: 4vw;
+    position: relative;
+  }
+  body .header .navegacion .lista {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-decoration: none;
+    width: 34vw;
+    padding: 0vw;
+  }
+  body .header .navegacion .lista li {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-decoration: none;
+    -webkit-transition: .3s;
+    transition: .3s;
+    padding: 0vw 2vw;
+  }
+  body .header .navegacion .lista li .enlaceNav {
+    text-decoration: none;
+    color: #5f5e6c;
+    -webkit-transition: .3s;
+    transition: .3s;
+    font-size: 1.2vw;
+  }
+  body .header .navegacion .lista li .enlaceNav:hover {
+    cursor: pointer;
+    color: #fb5859;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  body .header .navegacion .lista li .enlaceNavLogin {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2vw;
+    background-color: #fb5859;
+    padding: .8vw 2.4vw;
+    border-radius: .5vw;
+    border: 1px solid #fb5859;
+    -webkit-transition: .3s;
+    transition: .3s;
+    -webkit-box-shadow: -1px 3px 23px 4px rgba(0, 0, 0, 0.17);
+    box-shadow: -1px 3px 23px 4px rgba(0, 0, 0, 0.17);
+  }
+  body .header .navegacion .lista li .enlaceNavLogin:hover {
+    cursor: pointer;
+    color: #fb5859;
+    background-color: #ffffff;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  body .header .navegacionMobile {
+    display: none;
+  }
+  body .header .navegacionMobile .hamburger {
+    width: 5.5vw;
+  }
+  body .header .navegacionMobile .plusMobile {
+    width: 5.5vw;
+    display: none;
+  }
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,97 @@
+@media (max-width: 375px) {
+  body {
+    margin: 0vw;
+    padding: 0vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+  }
+  body .header {
+    padding: 6vw 0vw;
+    height: 14vw;
+  }
+  body .header .empresa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-decoration: none;
+    z-index: 1;
+    margin: auto 0vw;
+  }
+  body .header .empresa a {
+    cursor: pointer;
+  }
+  body .header .empresa a .logoBookmark {
+    height: 6vw;
+    margin: auto;
+  }
+  body .header .navegacion {
+    height: 12vw;
+    display: none;
+    position: absolute;
+    width: 100%;
+    margin-top: 51vw;
+    margin-top: 26.5vw;
+    margin-top: 14vw;
+  }
+  body .header .navegacion .lista {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #2f354fdc;
+    padding: 0vw;
+    width: 100%;
+  }
+  body .header .navegacion .lista li {
+    padding: 0vw 2vw;
+  }
+  body .header .navegacion .lista li .enlaceNav {
+    font-size: 5vw;
+    padding: 2vw 0vw;
+    color: #ffffff;
+  }
+  body .header .navegacion .lista li .enlaceNav:hover {
+    font-size: 5vw;
+    padding: 2vw 0vw;
+    color: #ffffff;
+  }
+  body .header .navegacion .lista li .enlaceNavLogin {
+    font-size: 5vw;
+    padding: 2vw 0vw;
+    color: #ffffff;
+    background: none;
+    border: none;
+  }
+  body .header .navegacion .lista li .enlaceNavLogin:hover {
+    font-size: 5vw;
+    padding: 2vw 0vw;
+    color: #ffffff;
+    background: none;
+    border: none;
+  }
+  body .header .navegacionMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .header .navegacionMobile .hamburger {
+    width: 5.5vw;
+  }
+  body .header .navegacionMobile .plusMobile {
+    width: 5.5vw;
+  }
+}
+/*# sourceMappingURL=small.css.map */
