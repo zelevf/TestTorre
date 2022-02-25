@@ -229,7 +229,26 @@
   }
   body .hero .divImageHero {
     border: 0px solid #000000;
+  }
+  body .hero .divImageHero .imageHero {
+    position: relative;
+    width: 90%;
+    padding-right: 20vw;
+    padding-bottom: 4vw;
     background: none;
+    z-index: 4;
+  }
+  body .hero .divImageHero .backgroundImageHero {
+    position: absolute;
+    width: 100%;
+    height: 22vw;
+    background: #5266df;
+    z-index: 3;
+    margin: -26vw 0vw 0vw 10vw;
+    border-radius: 0px 0px 0px 200px;
+    -moz-border-radius: 0px 0px 0px 200px;
+    -webkit-border-radius: 0px 0px 0px 200px;
+    border: 0px solid #000000;
   }
 }
 /*# sourceMappingURL=index.css.map */
