@@ -196,7 +196,7 @@
   }
   body .hero .divImageHero .backgroundImageHero {
     width: 90%;
-    position: absolute;
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

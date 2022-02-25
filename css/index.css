@@ -233,14 +233,14 @@
   body .hero .divImageHero .imageHero {
     position: relative;
     width: 90%;
-    padding-right: 20vw;
+    padding-right: 0vw;
     padding-bottom: 4vw;
     background: none;
     z-index: 4;
   }
   body .hero .divImageHero .backgroundImageHero {
-    position: absolute;
-    width: 100%;
+    position: relative;
+    width: 74%;
     height: 22vw;
     background: #5266df;
     z-index: 3;
@@ -249,6 +249,120 @@
     -moz-border-radius: 0px 0px 0px 200px;
     -webkit-border-radius: 0px 0px 0px 200px;
     border: 0px solid #000000;
+  }
+  body .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 4vw 0vw;
+    margin: auto;
+  }
+  body .features .infoFeatures {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  body .features .infoFeatures .titleFeatures {
+    font-size: 2vw;
+    font-weight: 500;
+    margin: auto;
+  }
+  body .features .infoFeatures .textFeatures {
+    font-size: 1.2vw;
+    color: #a9aaaf;
+    margin: auto;
+    padding-top: 2vw;
+    width: 36%;
+    text-align: center;
+    line-height: 1.8vw;
+  }
+  body .features .infoFeatures .optionsFeatures {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 5vw;
+  }
+  body .features .infoFeatures .optionsFeatures .listOptionsFeatures {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40%;
+    margin: auto;
+    padding: 0vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    line-height: 5vw;
+    border-bottom: 1px solid #85858d;
+  }
+  body .features .infoFeatures .optionsFeatures .listOptionsFeatures .itemListFeatures {
+    list-style: none;
+    width: 12vw;
+    color: #85858d;
+    margin: auto;
+    text-align: center;
+  }
+  body .features .infoFeatures .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-top: 2vw;
+  }
+  body .features .infoFeatures .buttons .button {
+    font-size: 1vw;
+    padding: 1vw 1.5vw;
+    border-radius: .5vw;
+    margin-right: 1.4vw;
+    -webkit-box-shadow: -1px 3px 23px 4px rgba(0, 0, 0, 0.17);
+    box-shadow: -1px 3px 23px 4px rgba(0, 0, 0, 0.17);
+  }
+  body .features .infoFeatures .buttons .dark {
+    background: #5367da;
+    color: #ffffff;
+    border: 1px solid #5367da;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  body .features .infoFeatures .buttons .dark:hover {
+    cursor: pointer;
+    background: #fffeff;
+    color: #6466bb;
+    border: 1px solid #666caa;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  body .features .infoFeatures .buttons .clear {
+    background: #f7f7f7;
+    color: #5e5e68;
+    border: 1px solid #f7f7f7;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  body .features .infoFeatures .buttons .clear:hover {
+    cursor: pointer;
+    background: #fffeff;
+    color: #8c8c98;
+    border: 1px solid #5e5f71;
+    -webkit-transition: .3s;
+    transition: .3s;
   }
 }
 /*# sourceMappingURL=index.css.map */
