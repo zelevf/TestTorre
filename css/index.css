@@ -315,6 +315,14 @@
     color: #85858d;
     margin: auto;
     text-align: center;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  body .features .infoFeatures .optionsFeatures .listOptionsFeatures .itemListFeatures:hover {
+    cursor: pointer;
+    color: #fb5859;
+    -webkit-transition: .3s;
+    transition: .3s;
   }
   body .features .infoFeatures .buttons {
     display: -webkit-box;
@@ -349,14 +357,126 @@
     -webkit-transition: .3s;
     transition: .3s;
   }
-  body .features .infoFeatures .buttons .clear {
+  body .features .containerTabsFeatures {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    padding: 4vw 0vw;
+  }
+  body .features .containerTabsFeatures .tabsFeatures {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: auto;
+  }
+  body .features .containerTabsFeatures .tabsFeatures .divImageFeatures {
+    border: 0px solid #000000;
+    width: 50%;
+  }
+  body .features .containerTabsFeatures .tabsFeatures .divImageFeatures .imageFeatures {
+    position: relative;
+    width: 70%;
+    padding-right: 0vw;
+    padding-bottom: 4vw;
+    background: none;
+    z-index: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 17vw;
+  }
+  body .features .containerTabsFeatures .tabsFeatures .divImageFeatures .backgroundImageFeatures {
+    position: relative;
+    width: 84%;
+    height: 22vw;
+    background: #5266df;
+    z-index: 3;
+    margin: -19vw 6vw 0vw 0vw;
+    border-radius: 0px 0px 200px 0px;
+    -moz-border-radius: 0px 0px 200px 0px;
+    -webkit-border-radius: 0px 0px 200px 0px;
+    border: 0px solid #000000;
+  }
+  body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 10vw;
+    margin-top: 4vw;
+  }
+  body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures .titleTabsFeatures {
+    font-size: 1.8vw;
+    font-weight: bolder;
+    margin: 0vw;
+    width: 70%;
+  }
+  body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures .textTabsFeatures {
+    font-size: 1.2vw;
+    color: #a9aaaf;
+    width: 64%;
+  }
+  body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-top: 2vw;
+  }
+  body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures .buttons .button {
+    font-size: 1vw;
+    padding: 1vw 1.5vw;
+    border-radius: .5vw;
+    margin-right: 1.4vw;
+    -webkit-box-shadow: -1px 3px 23px 4px rgba(0, 0, 0, 0.17);
+    box-shadow: -1px 3px 23px 4px rgba(0, 0, 0, 0.17);
+  }
+  body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures .buttons .dark {
+    background: #5367da;
+    color: #ffffff;
+    border: 1px solid #5367da;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures .buttons .dark:hover {
+    cursor: pointer;
+    background: #fffeff;
+    color: #6466bb;
+    border: 1px solid #666caa;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures .buttons .clear {
     background: #f7f7f7;
     color: #5e5e68;
     border: 1px solid #f7f7f7;
     -webkit-transition: .3s;
     transition: .3s;
   }
-  body .features .infoFeatures .buttons .clear:hover {
+  body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures .buttons .clear:hover {
     cursor: pointer;
     background: #fffeff;
     color: #8c8c98;
