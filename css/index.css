@@ -665,28 +665,40 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    position: relative;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     text-align: center;
-    padding-top: 1vw;
+    height: 3vw;
+    margin: auto;
+    vertical-align: center;
   }
   body .faq .faqAndAnswers .faqAndAnswersContainer .questionContainer .questions {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: auto 0vw;
     color: #5a5967;
     -webkit-transition: .3s;
     transition: .3s;
+    font-size: 1.2vw;
   }
   body .faq .faqAndAnswers .faqAndAnswersContainer .questionContainer .showAnswers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: .9vw;
     height: .6vw;
+    margin: auto 0vw;
   }
   body .faq .faqAndAnswers .faqAndAnswersContainer .questionContainer:hover .questions {
     color: #fb5859;
@@ -696,6 +708,8 @@
   body .faq .faqAndAnswers .faqAndAnswersContainer .answers {
     padding-top: 1vw;
     color: #7a7d86;
+    line-height: 2.4vw;
+    font-size: 1.1vw;
   }
   body .faq .buttonsAnswers {
     display: -webkit-box;
