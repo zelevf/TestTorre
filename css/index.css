@@ -696,18 +696,21 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding-top: 2vw;
+    padding: 2vw 0vw;
     width: 100%;
     margin: auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   body .faq .buttonsAnswers .button {
     font-size: 1vw;
     padding: 1vw 1.5vw;
     border-radius: .5vw;
-    margin-right: 1.4vw;
     -webkit-box-shadow: -1px 3px 23px 4px rgba(0, 0, 0, 0.17);
     box-shadow: -1px 3px 23px 4px rgba(0, 0, 0, 0.17);
   }
@@ -800,6 +803,76 @@
   }
   body .footer {
     background: #242946;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    width: 100%;
+    height: 4vw;
+    z-index: 5;
+    margin: 0vw;
+    padding: 0vw;
+  }
+  body .footer .footerInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    margin: auto 0vw;
+    vertical-align: center;
+  }
+  body .footer .footerInfo .empresaFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    text-decoration: none;
+    z-index: 1;
+    margin: auto 0vw;
+    background: red;
+  }
+  body .footer .footerInfo .empresaFooter a path {
+    color: #ffffff;
+  }
+  body .footer .footerInfo .navegacionFooter .listaFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-left: 2vw;
+  }
+  body .footer .footerInfo .navegacionFooter .listaFooter li {
+    list-style: none;
+    width: 100%;
+    font-size: 1vw;
+  }
+  body .footer .footerInfo .navegacionFooter .listaFooter li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  body .footer .rrss {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .footer .rrss a {
+    margin-left: 2vw;
   }
   body .titles {
     font-size: 2vw;
