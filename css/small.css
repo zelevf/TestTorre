@@ -129,6 +129,7 @@
     font-size: 4vw;
     color: #a9aaaf;
     text-align: center;
+    line-height: 6vw;
   }
   body .hero .infoHero .buttons {
     display: -webkit-box;
@@ -212,7 +213,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    padding: 4vw 0vw;
+    padding: 18vw 0vw 4vw 0vw;
     margin: auto;
   }
   body .features .infoFeatures {
@@ -268,11 +269,12 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     line-height: 5vw;
+    border-top: 1px solid #85858d;
     border-bottom: none;
   }
   body .features .infoFeatures .optionsFeatures .listOptionsFeatures .itemListFeatures {
     list-style: none;
-    width: 80%;
+    width: 98%;
     color: #85858d;
     margin: auto;
     text-align: center;
@@ -829,7 +831,7 @@
     margin: auto 0vw;
   }
   body .footer .footerInfo .empresaFooter a {
-    margin: 5vw 0vw;
+    margin: 2vw 0vw;
   }
   body .footer .footerInfo .empresaFooter a img {
     color: #ffffff;
@@ -856,7 +858,7 @@
     font-size: 5vw;
     margin: auto;
     text-align: center;
-    padding: 1vw 0vw;
+    padding: 2vw 0vw;
   }
   body .footer .footerInfo .navegacionFooter .listaFooter li a {
     color: #ffffff;
