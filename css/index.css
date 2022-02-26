@@ -652,9 +652,12 @@
     width: 35%;
     padding-top: 5vw;
     margin: auto;
-    border-bottom: 1px solid #dfdfdf;
   }
-  body .faq .faqAndAnswers .questionContainer {
+  body .faq .faqAndAnswers .faqAndAnswersContainer {
+    border-bottom: 1px solid #dfdfdf;
+    border-top: 1px solid #dfdfdf;
+  }
+  body .faq .faqAndAnswers .faqAndAnswersContainer .questionContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -666,10 +669,9 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     text-align: center;
-    border-top: 1px solid #dfdfdf;
     padding-top: 1vw;
   }
-  body .faq .faqAndAnswers .questionContainer .questions {
+  body .faq .faqAndAnswers .faqAndAnswersContainer .questionContainer .questions {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -678,15 +680,22 @@
         -ms-flex-direction: row;
             flex-direction: row;
     margin: auto 0vw;
-    color: #2d2c3c;
+    color: #5a5967;
+    -webkit-transition: .3s;
+    transition: .3s;
   }
-  body .faq .faqAndAnswers .questionContainer .showAnswers {
-    width: 1.2vw;
-    height: 1vw;
+  body .faq .faqAndAnswers .faqAndAnswersContainer .questionContainer .showAnswers {
+    width: .9vw;
+    height: .6vw;
   }
-  body .faq .faqAndAnswers .answers {
+  body .faq .faqAndAnswers .faqAndAnswersContainer .questionContainer:hover .questions {
+    color: #fb5859;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  body .faq .faqAndAnswers .faqAndAnswersContainer .answers {
     padding-top: 1vw;
-    color: #797c83;
+    color: #7a7d86;
   }
   body .faq .buttonsAnswers {
     display: -webkit-box;

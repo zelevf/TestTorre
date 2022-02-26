@@ -501,12 +501,12 @@
     margin: auto;
     text-align: center;
     width: 100%;
-    margin: 0vw;
-    height: 60vw;
-    padding: 6vw 0vw;
+    margin: 10vw 0vw;
+    height: auto;
+    padding: 0vw;
     -webkit-box-shadow: 0px 30px 40px 9px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 30px 40px 9px rgba(0, 0, 0, 0.15);
-    border-radius: 1vw;
+    border-radius: 3vw;
   }
   body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionInfo {
     border-bottom: 3px dotted #bebebe4b;
@@ -514,38 +514,47 @@
   }
   body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionInfo .extensionLogo {
     width: 22vw;
+    padding-top: 10vw;
   }
   body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionInfo .addExtension {
     font-size: 4vw;
-    font-weight: bold;
+    font-weight: bolder;
     color: #2c353e;
   }
   body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionInfo .versionExtension {
     font-size: 3vw;
-    color: #2c353e;
+    color: #a4a5aa;
+    padding-bottom: 4vw;
   }
   body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionCTA {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 19vw;
     margin: auto;
   }
   body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionCTA .buttons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    padding-top: 2vw;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 0vw;
     text-align: center;
     margin: auto;
+    height: auto;
+    vertical-align: center;
   }
   body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionCTA .buttons .button {
-    font-size: 3vw;
-    padding: 1vw 1.5vw;
-    border-radius: .5vw;
+    font-size: 3.2vw;
+    padding: 3vw 5.5vw;
+    border-radius: 1.5vw;
     -webkit-box-shadow: -1px 3px 23px 4px rgba(0, 0, 0, 0.17);
     box-shadow: -1px 3px 23px 4px rgba(0, 0, 0, 0.17);
   }
@@ -610,6 +619,11 @@
         -ms-flex-pack: center;
             justify-content: center;
     margin: auto;
+    padding-top: 20vw;
+  }
+  body .faq .faqInfo .titles {
+    width: 50%;
+    text-align: center;
   }
   body .faq .faqAndAnswers {
     display: -webkit-box;
@@ -620,11 +634,15 @@
         -ms-flex-direction: column;
             flex-direction: column;
     width: 80%;
-    padding-top: 5vw;
+    padding-top: 20vw;
     margin: auto;
     border-bottom: 1px solid #dfdfdf;
   }
-  body .faq .faqAndAnswers .questionContainer {
+  body .faq .faqAndAnswers .faqAndAnswersContainer {
+    border-bottom: 1px solid #dfdfdf;
+    border-top: none;
+  }
+  body .faq .faqAndAnswers .faqAndAnswersContainer .questionContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -636,10 +654,10 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     text-align: center;
-    border-top: 1px solid #dfdfdf;
+    border-top: none;
     padding-top: 1vw;
   }
-  body .faq .faqAndAnswers .questionContainer .questions {
+  body .faq .faqAndAnswers .faqAndAnswersContainer .questionContainer .questions {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -651,11 +669,11 @@
     color: #2d2c3c;
     font-size: 4vw;
   }
-  body .faq .faqAndAnswers .questionContainer .showAnswers {
+  body .faq .faqAndAnswers .faqAndAnswersContainer .questionContainer .showAnswers {
     width: 3.6vw;
     height: 3vw;
   }
-  body .faq .faqAndAnswers .answers {
+  body .faq .faqAndAnswers .faqAndAnswersContainer .answers {
     padding-top: 1vw;
     color: #797c83;
   }
@@ -883,7 +901,7 @@
   }
   body .titles {
     font-size: 5vw;
-    font-weight: 500;
+    font-weight: bolder;
     margin: auto;
   }
   body .texts {
