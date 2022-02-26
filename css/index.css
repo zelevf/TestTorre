@@ -615,6 +615,192 @@
   body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionThree {
     margin: 4vw 0vw 0vw 0vw;
   }
+  body .faq {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 3vw 0vw;
+    margin: auto;
+  }
+  body .faq .faqInfo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  body .faq .faqAndAnswers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 35%;
+    padding-top: 5vw;
+    margin: auto;
+    border-bottom: 1px solid #dfdfdf;
+  }
+  body .faq .faqAndAnswers .questionContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+    border-top: 1px solid #dfdfdf;
+    padding-top: 1vw;
+  }
+  body .faq .faqAndAnswers .questionContainer .questions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: auto 0vw;
+    color: #2d2c3c;
+  }
+  body .faq .faqAndAnswers .questionContainer .showAnswers {
+    width: 1.2vw;
+    height: 1vw;
+  }
+  body .faq .faqAndAnswers .answers {
+    padding-top: 1vw;
+    color: #797c83;
+  }
+  body .faq .buttonsAnswers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-top: 2vw;
+    width: 100%;
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .faq .buttonsAnswers .button {
+    font-size: 1vw;
+    padding: 1vw 1.5vw;
+    border-radius: .5vw;
+    margin-right: 1.4vw;
+    -webkit-box-shadow: -1px 3px 23px 4px rgba(0, 0, 0, 0.17);
+    box-shadow: -1px 3px 23px 4px rgba(0, 0, 0, 0.17);
+  }
+  body .faq .buttonsAnswers .dark {
+    background: #5367da;
+    color: #ffffff;
+    border: 1px solid #5367da;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  body .faq .buttonsAnswers .dark:hover {
+    cursor: pointer;
+    background: #fffeff;
+    color: #6466bb;
+    border: 1px solid #666caa;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  body .formulario {
+    background: #5266df;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 3vw 0vw;
+  }
+  body .formulario .joinedForm {
+    color: #ffffff;
+    margin: auto;
+    padding: 1vw 0vw;
+    font-size: 1vw;
+  }
+  body .formulario .joinedTitle {
+    width: 36%;
+    color: #ffffff;
+    margin: auto;
+    padding: 1vw 0vw;
+    font-size: 2.4vw;
+    font-weight: bold;
+    text-align: center;
+  }
+  body .formulario .submit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #ffffff;
+    margin: auto;
+    padding: 1vw 0vw;
+  }
+  body .formulario .submit .inputSubmit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 20vw;
+    margin-right: 1vw;
+    border-radius: .3vw;
+    background: white;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px 5px 5px 5px;
+    color: #d3d3d3;
+    font-size: 12px;
+    padding: 0vw 2vw;
+  }
+  body .formulario .submit .buttonSubmit {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1vw;
+    background-color: #fb5859;
+    padding: .8vw 2.4vw;
+    border-radius: .5vw;
+    border: 1px solid #fb5859;
+    -webkit-transition: .3s;
+    transition: .3s;
+    -webkit-box-shadow: -1px 3px 23px 4px rgba(0, 0, 0, 0.17);
+    box-shadow: -1px 3px 23px 4px rgba(0, 0, 0, 0.17);
+  }
+  body .formulario .submit .buttonSubmit:hover {
+    cursor: pointer;
+    color: #fb5859;
+    background-color: #ffffff;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  body .footer {
+    background: #242946;
+  }
   body .titles {
     font-size: 2vw;
     font-weight: 500;
