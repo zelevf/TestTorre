@@ -857,7 +857,6 @@
   }
   body .footer .footerInfo .empresaFooter a img {
     color: #ffffff;
-    font-size: 2vw;
   }
   body .footer .footerInfo .navegacionFooter .listaFooter {
     display: -webkit-box;
@@ -885,7 +884,7 @@
   body .footer .footerInfo .navegacionFooter .listaFooter li a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 3vw;
+    font-size: 3.6vw;
     padding: 2vw 0vw;
   }
   body .footer .rrss {
@@ -900,7 +899,7 @@
     margin-left: 2vw;
   }
   body .footer .rrss a img {
-    padding: 2vw;
+    padding: 4vw;
   }
   body .titles {
     font-size: 5vw;
