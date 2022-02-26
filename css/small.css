@@ -676,6 +676,8 @@
   body .faq .faqAndAnswers .faqAndAnswersContainer .answers {
     padding-top: 1vw;
     color: #797c83;
+    line-height: 6vw;
+    font-size: 3.4vw;
   }
   body .faq .buttonsAnswers {
     display: -webkit-box;
