@@ -641,6 +641,7 @@
   body .faq .faqAndAnswers .faqAndAnswersContainer {
     border-bottom: 1px solid #dfdfdf;
     border-top: none;
+    padding-top: 3vw;
   }
   body .faq .faqAndAnswers .faqAndAnswersContainer .questionContainer {
     display: -webkit-box;
@@ -687,7 +688,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 2vw 0vw;
+    padding: 12vw 0vw;
     width: 100%;
     margin: auto;
     -webkit-box-pack: center;
@@ -733,7 +734,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 6vw 0vw;
+    padding: 12vw 0vw;
   }
   body .formulario .joinedForm {
     color: #ffffff;
@@ -760,7 +761,7 @@
             flex-direction: column;
     color: #ffffff;
     margin: auto;
-    padding: 1vw 0vw;
+    padding: 4vw 0vw;
   }
   body .formulario .submit .inputSubmit {
     display: -webkit-box;
