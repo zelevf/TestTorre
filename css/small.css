@@ -1,5 +1,5 @@
 @media (max-width: 375px) {
-  body {
+  .body {
     margin: 0vw;
     padding: 0vw;
     display: -webkit-box;
@@ -11,11 +11,16 @@
             flex-direction: column;
     font-family: 'Rubik', sans-serif;
   }
-  body .header {
+  .body .header {
     padding: 6vw 0vw;
-    height: 14vw;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    z-index: 5;
   }
-  body .header .empresa {
+  .body .header .empresa {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -30,70 +35,110 @@
     z-index: 1;
     margin: auto 0vw;
   }
-  body .header .empresa a {
+  .body .header .empresa a {
     cursor: pointer;
   }
-  body .header .empresa a .logoBookmark {
+  .body .header .empresa a .logoBookmark {
     height: 6vw;
     margin: auto;
   }
-  body .header .navegacion {
-    height: 12vw;
+  .body .header .navegacion {
+    height: auto;
     display: none;
     position: absolute;
     width: 100%;
-    margin-top: 51vw;
-    margin-top: 26.5vw;
-    margin-top: 14vw;
+    margin-top: 0vw;
+    top: 25.1vw;
   }
-  body .header .navegacion .lista {
+  .body .header .navegacion .lista {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background: #2f354fdc;
+    position: relative;
+    z-index: 5;
+    margin-top: -6vw;
     padding: 0vw;
     width: 100%;
   }
-  body .header .navegacion .lista li {
+  .body .header .navegacion .lista li {
     padding: 0vw 2vw;
+    width: 80%;
+    margin-top: 0vw;
+    margin-bottom: 0vw;
   }
-  body .header .navegacion .lista li .enlaceNav {
+  .body .header .navegacion .lista li .enlaceNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     font-size: 5vw;
-    padding: 2vw 0vw;
+    padding: 6vw 0vw;
+    color: #ffffff;
+    border-bottom: 1px solid #a9aaaf;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .body .header .navegacion .lista li .enlaceNav:hover {
+    font-size: 5vw;
     color: #ffffff;
   }
-  body .header .navegacion .lista li .enlaceNav:hover {
+  .body .header .navegacion .lista li .enlaceNavLogin {
     font-size: 5vw;
-    padding: 2vw 0vw;
-    color: #ffffff;
-  }
-  body .header .navegacion .lista li .enlaceNavLogin {
-    font-size: 5vw;
-    padding: 2vw 0vw;
+    margin: 4vw;
+    padding: 3vw 41%;
     color: #ffffff;
     background: none;
-    border: none;
+    border: 3px solid #ffffff;
+    border-radius: 2vw;
   }
-  body .header .navegacion .lista li .enlaceNavLogin:hover {
-    font-size: 5vw;
-    padding: 2vw 0vw;
-    color: #ffffff;
-    background: none;
-    border: none;
+  .body .header .navegacion .lista li .enlaceNavLogin:hover {
+    color: #2f354fdc;
+    background: #ffffff;
   }
-  body .header .navegacionMobile {
+  .body .header .navegacion .rrssContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    z-index: 5;
+    margin-top: -4.4vw;
+    padding: 50vw 30vw 100vw 30vw;
+    height: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .body .header .navegacion .rrssContainer .socialRed {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  body .header .navegacionMobile .hamburger {
+  .body .header .navegacion .backgroundMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 300vw;
+    top: 0;
+    background: #2f354fdc;
+  }
+  .body .header .navegacionMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    z-index: 5;
+  }
+  .body .header .navegacionMobile .hamburger {
     width: 5.5vw;
   }
-  body .header .navegacionMobile .plusMobile {
+  .body .header .navegacionMobile .plusMobile {
     width: 5.5vw;
   }
-  body .hero {
+  .body .hero {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -104,7 +149,7 @@
     width: 100%;
     padding: 4vw 0vw;
   }
-  body .hero .infoHero {
+  .body .hero .infoHero {
     width: 80%;
     padding: 10% 0%;
     margin: auto;
@@ -119,19 +164,19 @@
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  body .hero .infoHero .titleHero {
+  .body .hero .infoHero .titleHero {
     font-size: 7vw;
     font-weight: 500;
     margin: auto;
     text-align: center;
   }
-  body .hero .infoHero .textHero {
+  .body .hero .infoHero .textHero {
     font-size: 4vw;
     color: #a9aaaf;
     text-align: center;
     line-height: 6vw;
   }
-  body .hero .infoHero .buttons {
+  .body .hero .infoHero .buttons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -142,7 +187,7 @@
     padding-top: 2vw;
     margin: auto;
   }
-  body .hero .infoHero .buttons .button {
+  .body .hero .infoHero .buttons .button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -153,14 +198,14 @@
     -webkit-box-shadow: -1px 3px 23px 4px rgba(0, 0, 0, 0.17);
     box-shadow: -1px 3px 23px 4px rgba(0, 0, 0, 0.17);
   }
-  body .hero .infoHero .buttons .dark {
+  .body .hero .infoHero .buttons .dark {
     background: #5367da;
     color: #ffffff;
     border: 1px solid #5367da;
     -webkit-transition: .3s;
     transition: .3s;
   }
-  body .hero .infoHero .buttons .dark:hover {
+  .body .hero .infoHero .buttons .dark:hover {
     cursor: pointer;
     background: #fffeff;
     color: #6466bb;
@@ -168,14 +213,14 @@
     -webkit-transition: .3s;
     transition: .3s;
   }
-  body .hero .infoHero .buttons .clear {
+  .body .hero .infoHero .buttons .clear {
     background: #f7f7f7;
     color: #5e5e68;
     border: 1px solid #f7f7f7;
     -webkit-transition: .3s;
     transition: .3s;
   }
-  body .hero .infoHero .buttons .clear:hover {
+  .body .hero .infoHero .buttons .clear:hover {
     cursor: pointer;
     background: #fffeff;
     color: #8c8c98;
@@ -183,10 +228,10 @@
     -webkit-transition: .3s;
     transition: .3s;
   }
-  body .hero .divImageHero {
+  .body .hero .divImageHero {
     border: 0px solid #000000;
   }
-  body .hero .divImageHero .imageHero {
+  .body .hero .divImageHero .imageHero {
     position: relative;
     width: 100%;
     padding-right: 0vw;
@@ -195,7 +240,7 @@
     background: none;
     z-index: 4;
   }
-  body .hero .divImageHero .backgroundImageHero {
+  .body .hero .divImageHero .backgroundImageHero {
     width: 90%;
     position: relative;
     display: -webkit-box;
@@ -204,7 +249,7 @@
     height: 55vw;
     margin: -57vw auto auto 10%;
   }
-  body .features {
+  .body .features {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -216,7 +261,7 @@
     padding: 18vw 0vw 4vw 0vw;
     margin: auto;
   }
-  body .features .infoFeatures {
+  .body .features .infoFeatures {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -230,12 +275,12 @@
             justify-content: center;
     margin: auto;
   }
-  body .features .infoFeatures .titleFeatures {
+  .body .features .infoFeatures .titleFeatures {
     font-size: 6vw;
     font-weight: 500;
     margin: auto;
   }
-  body .features .infoFeatures .textFeatures {
+  .body .features .infoFeatures .textFeatures {
     font-size: 4vw;
     color: #a9aaaf;
     margin: auto;
@@ -244,7 +289,7 @@
     text-align: center;
     line-height: 5vw;
   }
-  body .features .infoFeatures .optionsFeatures {
+  .body .features .infoFeatures .optionsFeatures {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -254,7 +299,7 @@
             flex-direction: column;
     padding-top: 5vw;
   }
-  body .features .infoFeatures .optionsFeatures .listOptionsFeatures {
+  .body .features .infoFeatures .optionsFeatures .listOptionsFeatures {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -272,7 +317,7 @@
     border-top: 1px solid #85858d;
     border-bottom: none;
   }
-  body .features .infoFeatures .optionsFeatures .listOptionsFeatures .itemListFeatures {
+  .body .features .infoFeatures .optionsFeatures .listOptionsFeatures .itemListFeatures {
     list-style: none;
     width: 98%;
     color: #85858d;
@@ -283,13 +328,13 @@
     padding: 4vw 0vw;
     border-bottom: 1px solid #85858d;
   }
-  body .features .infoFeatures .optionsFeatures .listOptionsFeatures .itemListFeatures:hover {
+  .body .features .infoFeatures .optionsFeatures .listOptionsFeatures .itemListFeatures:hover {
     cursor: pointer;
     color: #fb5859;
     -webkit-transition: .3s;
     transition: .3s;
   }
-  body .features .infoFeatures .buttons {
+  .body .features .infoFeatures .buttons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -299,7 +344,7 @@
             flex-direction: row;
     padding-top: 2vw;
   }
-  body .features .infoFeatures .buttons .button {
+  .body .features .infoFeatures .buttons .button {
     font-size: 1vw;
     padding: 1vw 1.5vw;
     border-radius: .5vw;
@@ -307,14 +352,14 @@
     -webkit-box-shadow: -1px 3px 23px 4px rgba(0, 0, 0, 0.17);
     box-shadow: -1px 3px 23px 4px rgba(0, 0, 0, 0.17);
   }
-  body .features .infoFeatures .buttons .dark {
+  .body .features .infoFeatures .buttons .dark {
     background: #5367da;
     color: #ffffff;
     border: 1px solid #5367da;
     -webkit-transition: .3s;
     transition: .3s;
   }
-  body .features .infoFeatures .buttons .dark:hover {
+  .body .features .infoFeatures .buttons .dark:hover {
     cursor: pointer;
     background: #fffeff;
     color: #6466bb;
@@ -322,7 +367,7 @@
     -webkit-transition: .3s;
     transition: .3s;
   }
-  body .features .containerTabsFeatures {
+  .body .features .containerTabsFeatures {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -333,7 +378,7 @@
     width: 100%;
     padding: 18vw 0vw;
   }
-  body .features .containerTabsFeatures .tabsFeatures {
+  .body .features .containerTabsFeatures .tabsFeatures {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -346,11 +391,11 @@
             justify-content: flex-end;
     margin: auto;
   }
-  body .features .containerTabsFeatures .tabsFeatures .divImageFeatures {
+  .body .features .containerTabsFeatures .tabsFeatures .divImageFeatures {
     border: 0px solid #000000;
     width: 80%;
   }
-  body .features .containerTabsFeatures .tabsFeatures .divImageFeatures .imageFeatures {
+  .body .features .containerTabsFeatures .tabsFeatures .divImageFeatures .imageFeatures {
     position: relative;
     width: 100%;
     padding-right: 0vw;
@@ -366,7 +411,7 @@
             flex-direction: row;
     margin-left: 17vw;
   }
-  body .features .containerTabsFeatures .tabsFeatures .divImageFeatures .backgroundImageFeatures {
+  .body .features .containerTabsFeatures .tabsFeatures .divImageFeatures .backgroundImageFeatures {
     position: relative;
     width: 100%;
     height: 52vw;
@@ -378,7 +423,7 @@
     -webkit-border-radius: 0px 0px 100px 0px;
     border: 0px solid #000000;
   }
-  body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures {
+  .body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -390,14 +435,14 @@
     margin-left: 0vw;
     margin-top: 8vw;
   }
-  body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures .titleTabsFeatures {
+  .body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures .titleTabsFeatures {
     font-size: 5vw;
     font-weight: bolder;
     margin: auto;
     width: 100%;
     text-align: center;
   }
-  body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures .textTabsFeatures {
+  .body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures .textTabsFeatures {
     font-size: 4vw;
     color: #a9aaaf;
     width: 84%;
@@ -406,7 +451,7 @@
     text-align: center;
     line-height: 7vw;
   }
-  body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures .buttons {
+  .body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures .buttons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -417,7 +462,7 @@
     padding-top: 5vw;
     margin: auto;
   }
-  body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures .buttons .button {
+  .body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures .buttons .button {
     font-size: 4vw;
     padding: 3vw 4.5vw;
     border-radius: 1.5vw;
@@ -425,14 +470,14 @@
     -webkit-box-shadow: -1px 3px 23px 4px rgba(0, 0, 0, 0.17);
     box-shadow: -1px 3px 23px 4px rgba(0, 0, 0, 0.17);
   }
-  body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures .buttons .dark {
+  .body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures .buttons .dark {
     background: #5367da;
     color: #ffffff;
     border: 1px solid #5367da;
     -webkit-transition: .3s;
     transition: .3s;
   }
-  body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures .buttons .dark:hover {
+  .body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures .buttons .dark:hover {
     cursor: pointer;
     background: #fffeff;
     color: #6466bb;
@@ -440,14 +485,14 @@
     -webkit-transition: .3s;
     transition: .3s;
   }
-  body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures .buttons .clear {
+  .body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures .buttons .clear {
     background: #f7f7f7;
     color: #5e5e68;
     border: 1px solid #f7f7f7;
     -webkit-transition: .3s;
     transition: .3s;
   }
-  body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures .buttons .clear:hover {
+  .body .features .containerTabsFeatures .tabsFeatures .infoTabFeatures .buttons .clear:hover {
     cursor: pointer;
     background: #fffeff;
     color: #8c8c98;
@@ -455,7 +500,7 @@
     -webkit-transition: .3s;
     transition: .3s;
   }
-  body .downloadExtension {
+  .body .downloadExtension {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -467,7 +512,7 @@
     padding: 3vw 0vw;
     margin: auto;
   }
-  body .downloadExtension .infoExtensions {
+  .body .downloadExtension .infoExtensions {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -480,11 +525,11 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  body .downloadExtension .infoExtensions .optionsExtensions {
+  .body .downloadExtension .infoExtensions .optionsExtensions {
     width: 100%;
     padding-top: 10vw;
   }
-  body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer {
+  .body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer {
     width: 60%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -497,7 +542,7 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose {
+  .body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose {
     margin: auto;
     text-align: center;
     width: 100%;
@@ -508,25 +553,25 @@
     box-shadow: 0px 30px 40px 9px rgba(0, 0, 0, 0.15);
     border-radius: 3vw;
   }
-  body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionInfo {
+  .body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionInfo {
     border-bottom: 3px dotted #bebebe4b;
     padding: 1vw 0vw;
   }
-  body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionInfo .extensionLogo {
+  .body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionInfo .extensionLogo {
     width: 22vw;
     padding-top: 10vw;
   }
-  body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionInfo .addExtension {
+  .body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionInfo .addExtension {
     font-size: 4vw;
     font-weight: bolder;
     color: #2c353e;
   }
-  body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionInfo .versionExtension {
+  .body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionInfo .versionExtension {
     font-size: 3vw;
     color: #a4a5aa;
     padding-bottom: 4vw;
   }
-  body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionCTA {
+  .body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionCTA {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -537,7 +582,7 @@
     height: 19vw;
     margin: auto;
   }
-  body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionCTA .buttons {
+  .body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionCTA .buttons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -551,21 +596,21 @@
     height: auto;
     vertical-align: center;
   }
-  body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionCTA .buttons .button {
+  .body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionCTA .buttons .button {
     font-size: 3.2vw;
     padding: 3vw 5.5vw;
     border-radius: 1.5vw;
     -webkit-box-shadow: -1px 3px 23px 4px rgba(0, 0, 0, 0.17);
     box-shadow: -1px 3px 23px 4px rgba(0, 0, 0, 0.17);
   }
-  body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionCTA .buttons .dark {
+  .body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionCTA .buttons .dark {
     background: #5367da;
     color: #ffffff;
     border: 1px solid #5367da;
     -webkit-transition: .3s;
     transition: .3s;
   }
-  body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionCTA .buttons .dark:hover {
+  .body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionCTA .buttons .dark:hover {
     cursor: pointer;
     background: #fffeff;
     color: #6466bb;
@@ -573,14 +618,14 @@
     -webkit-transition: .3s;
     transition: .3s;
   }
-  body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionCTA .buttons .clear {
+  .body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionCTA .buttons .clear {
     background: #f7f7f7;
     color: #5e5e68;
     border: 1px solid #f7f7f7;
     -webkit-transition: .3s;
     transition: .3s;
   }
-  body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionCTA .buttons .clear:hover {
+  .body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionsExtensionsChoose .extensionCTA .buttons .clear:hover {
     cursor: pointer;
     background: #fffeff;
     color: #8c8c98;
@@ -588,13 +633,13 @@
     -webkit-transition: .3s;
     transition: .3s;
   }
-  body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionOne {
+  .body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionOne {
     margin: 0vw 0vw 4vw 0vw;
   }
-  body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionThree {
+  .body .downloadExtension .infoExtensions .optionsExtensions .optionsExtensionsContainer .optionThree {
     margin: 4vw 0vw 0vw 0vw;
   }
-  body .faq {
+  .body .faq {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -606,7 +651,7 @@
     padding: 6vw 0vw;
     margin: auto;
   }
-  body .faq .faqInfo {
+  .body .faq .faqInfo {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -621,11 +666,11 @@
     margin: auto;
     padding-top: 20vw;
   }
-  body .faq .faqInfo .titles {
+  .body .faq .faqInfo .titles {
     width: 50%;
     text-align: center;
   }
-  body .faq .faqAndAnswers {
+  .body .faq .faqAndAnswers {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -638,12 +683,12 @@
     margin: auto;
     border-bottom: 1px solid #dfdfdf;
   }
-  body .faq .faqAndAnswers .faqAndAnswersContainer {
+  .body .faq .faqAndAnswers .faqAndAnswersContainer {
     border-bottom: 1px solid #dfdfdf;
     border-top: none;
     padding-top: 3vw;
   }
-  body .faq .faqAndAnswers .faqAndAnswersContainer .questionContainer {
+  .body .faq .faqAndAnswers .faqAndAnswersContainer .questionContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -658,7 +703,7 @@
     border-top: none;
     padding-top: 1vw;
   }
-  body .faq .faqAndAnswers .faqAndAnswersContainer .questionContainer .questions {
+  .body .faq .faqAndAnswers .faqAndAnswersContainer .questionContainer .questions {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -670,17 +715,17 @@
     color: #2d2c3c;
     font-size: 4vw;
   }
-  body .faq .faqAndAnswers .faqAndAnswersContainer .questionContainer .showAnswers {
+  .body .faq .faqAndAnswers .faqAndAnswersContainer .questionContainer .showAnswers {
     width: 3.6vw;
     height: 3vw;
   }
-  body .faq .faqAndAnswers .faqAndAnswersContainer .answers {
+  .body .faq .faqAndAnswers .faqAndAnswersContainer .answers {
     padding-top: 1vw;
     color: #797c83;
     line-height: 6vw;
     font-size: 3.4vw;
   }
-  body .faq .buttonsAnswers {
+  .body .faq .buttonsAnswers {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -699,21 +744,21 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  body .faq .buttonsAnswers .button {
+  .body .faq .buttonsAnswers .button {
     font-size: 4vw;
     padding: 3vw 4.5vw;
     border-radius: 1.5vw;
     -webkit-box-shadow: -1px 3px 23px 4px rgba(0, 0, 0, 0.17);
     box-shadow: -1px 3px 23px 4px rgba(0, 0, 0, 0.17);
   }
-  body .faq .buttonsAnswers .dark {
+  .body .faq .buttonsAnswers .dark {
     background: #5367da;
     color: #ffffff;
     border: 1px solid #5367da;
     -webkit-transition: .3s;
     transition: .3s;
   }
-  body .faq .buttonsAnswers .dark:hover {
+  .body .faq .buttonsAnswers .dark:hover {
     cursor: pointer;
     background: #fffeff;
     color: #6466bb;
@@ -721,7 +766,7 @@
     -webkit-transition: .3s;
     transition: .3s;
   }
-  body .formulario {
+  .body .formulario {
     background: #5266df;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -736,13 +781,13 @@
             justify-content: center;
     padding: 12vw 0vw;
   }
-  body .formulario .joinedForm {
+  .body .formulario .joinedForm {
     color: #ffffff;
     margin: auto;
     padding: 1vw 0vw;
     font-size: 3vw;
   }
-  body .formulario .joinedTitle {
+  .body .formulario .joinedTitle {
     width: 75%;
     color: #ffffff;
     margin: auto;
@@ -751,7 +796,7 @@
     font-weight: bold;
     text-align: center;
   }
-  body .formulario .submit {
+  .body .formulario .submit {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -763,7 +808,7 @@
     margin: auto;
     padding: 4vw 0vw;
   }
-  body .formulario .submit .inputSubmit {
+  .body .formulario .submit .inputSubmit {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -779,7 +824,7 @@
     padding: 0vw 2vw;
     text-align: center;
   }
-  body .formulario .submit .buttonSubmit {
+  .body .formulario .submit .buttonSubmit {
     text-decoration: none;
     color: #ffffff;
     font-size: 4vw;
@@ -796,14 +841,14 @@
     margin-top: 5vw;
     text-align: center;
   }
-  body .formulario .submit .buttonSubmit:hover {
+  .body .formulario .submit .buttonSubmit:hover {
     cursor: pointer;
     color: #fb5859;
     background-color: #ffffff;
     -webkit-transition: .3s;
     transition: .3s;
   }
-  body .footer {
+  .body .footer {
     background: #242946;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -824,7 +869,7 @@
     margin: 0vw;
     padding: 5vw 0vw;
   }
-  body .footer .footerInfo {
+  .body .footer .footerInfo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -836,7 +881,7 @@
     margin: auto 0vw;
     vertical-align: center;
   }
-  body .footer .footerInfo .empresaFooter {
+  .body .footer .footerInfo .empresaFooter {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -852,13 +897,13 @@
     z-index: 1;
     margin: auto 0vw;
   }
-  body .footer .footerInfo .empresaFooter a {
+  .body .footer .footerInfo .empresaFooter a {
     margin: 2vw 0vw;
   }
-  body .footer .footerInfo .empresaFooter a img {
+  .body .footer .footerInfo .empresaFooter a img {
     color: #ffffff;
   }
-  body .footer .footerInfo .navegacionFooter .listaFooter {
+  .body .footer .footerInfo .navegacionFooter .listaFooter {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -873,7 +918,7 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  body .footer .footerInfo .navegacionFooter .listaFooter li {
+  .body .footer .footerInfo .navegacionFooter .listaFooter li {
     list-style: none;
     width: 100%;
     font-size: 5vw;
@@ -881,13 +926,13 @@
     text-align: center;
     padding: 2vw 0vw;
   }
-  body .footer .footerInfo .navegacionFooter .listaFooter li a {
+  .body .footer .footerInfo .navegacionFooter .listaFooter li a {
     color: #ffffff;
     text-decoration: none;
     font-size: 3.6vw;
     padding: 2vw 0vw;
   }
-  body .footer .rrss {
+  .body .footer .rrss {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -895,18 +940,18 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  body .footer .rrss a {
+  .body .footer .rrss a {
     margin-left: 2vw;
   }
-  body .footer .rrss a img {
+  .body .footer .rrss a img {
     padding: 4vw;
   }
-  body .titles {
+  .body .titles {
     font-size: 5vw;
     font-weight: bolder;
     margin: auto;
   }
-  body .texts {
+  .body .texts {
     font-size: 4vw;
     color: #a9aaaf;
     margin: auto;
