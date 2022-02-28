@@ -682,7 +682,6 @@
   .body .faq .faqAndAnswers .faqAndAnswersContainer {
     border-bottom: 1px solid #dfdfdf;
     border-top: 1px solid #dfdfdf;
-    padding-top: 1vw;
   }
   .body .faq .faqAndAnswers .faqAndAnswersContainer .questionContainer {
     display: -webkit-box;
@@ -697,9 +696,9 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     text-align: center;
-    height: 3vw;
     margin: auto;
     vertical-align: center;
+    padding: 1vw 0vw;
   }
   .body .faq .faqAndAnswers .faqAndAnswersContainer .questionContainer .questions {
     display: -webkit-box;
@@ -733,10 +732,25 @@
     transition: .3s;
   }
   .body .faq .faqAndAnswers .faqAndAnswersContainer .answers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     padding-top: 1vw;
     color: #7a7d86;
     line-height: 2.4vw;
     font-size: 1.1vw;
+  }
+  .body .faq .faqAndAnswers .faqAndAnswersContainer .answer1 {
+    display: none;
+  }
+  .body .faq .faqAndAnswers .faqAndAnswersContainer .answer2 {
+    display: none;
+  }
+  .body .faq .faqAndAnswers .faqAndAnswersContainer .answer3 {
+    display: none;
+  }
+  .body .faq .faqAndAnswers .faqAndAnswersContainer .answer4 {
+    display: none;
   }
   .body .faq .buttonsAnswers {
     display: -webkit-box;
