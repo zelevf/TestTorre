@@ -13,8 +13,6 @@ const twitter = document.createElement('img');
 
 hamburger.addEventListener('click', () => {
 
-
-
     linkFace.href = 'https://facebook.com';
     linkTwit.href = 'https://twitter.com';
 
