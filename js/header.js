@@ -38,10 +38,6 @@ hamburger.addEventListener('click', () => {
     linkFace.appendChild(facebook);
     linkTwit.appendChild(twitter);
 
-    console.log(rrss);
-    console.log(facebook);
-    console.log(twitter);
-
     if (navegadorMobile.style.display == 'flex') {
         navegadorMobile.style.display = 'none';
         hamburger.style.display = 'flex';

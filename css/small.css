@@ -516,6 +516,17 @@
     -webkit-transition: .3s;
     transition: .3s;
   }
+  .body .features .containerTabsFeatures .containerTab1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .body .features .containerTabsFeatures .containerTab2 {
+    display: none;
+  }
+  .body .features .containerTabsFeatures .containerTab3 {
+    display: none;
+  }
   .body .downloadExtension {
     display: -webkit-box;
     display: -ms-flexbox;
