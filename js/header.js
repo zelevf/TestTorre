@@ -11,6 +11,10 @@ const linkTwit = document.createElement('a');
 const facebook = document.createElement('img');
 const twitter = document.createElement('img');
 
+const features = document.querySelector('.goFeatures');
+const pricing = document.querySelector('.goPricing');
+const contact = document.querySelector('.goContact');
+
 hamburger.addEventListener('click', () => {
 
     linkFace.href = 'https://facebook.com';
@@ -71,3 +75,35 @@ plus.addEventListener('click', () => {
 })
 
 
+features.addEventListener('click', () => {
+    backgroundMenu.remove();
+    rrss.remove();
+    navegadorMobile.style.display = 'none';
+    hamburger.style.display = 'flex';
+    plus.style.display = 'none';
+    header.style.backgroundColor = '#ffffff';
+    header.style.position = 'relative';
+    body.style.position = 'relative';
+})
+
+pricing.addEventListener('click', () => {
+    backgroundMenu.remove();
+    rrss.remove();
+    navegadorMobile.style.display = 'none';
+    hamburger.style.display = 'flex';
+    plus.style.display = 'none';
+    header.style.backgroundColor = '#ffffff';
+    header.style.position = 'relative';
+    body.style.position = 'relative';
+})
+
+contact.addEventListener('click', () => {
+    backgroundMenu.remove();
+    rrss.remove();
+    navegadorMobile.style.display = 'none';
+    hamburger.style.display = 'flex';
+    plus.style.display = 'none';
+    header.style.backgroundColor = '#ffffff';
+    header.style.position = 'relative';
+    body.style.position = 'relative';
+})
