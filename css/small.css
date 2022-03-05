@@ -834,38 +834,68 @@
     color: #ffffff;
     margin: auto;
     padding: 4vw 0vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .body .formulario .submit .inputSubmit {
+  .body .formulario .submit .inputContainer .inputSubmit {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 80vw;
+    width: 80.5vw;
     height: 8vw;
-    margin-right: 1vw;
-    border-radius: .3vw;
+    margin-right: 0vw;
+    border-radius: 1vw;
     background: white;
     border: 1px solid #d1d1d1;
-    border-radius: 5px 5px 5px 5px;
     color: #d3d3d3;
-    font-size: 12px;
     padding: 0vw 2vw;
     text-align: center;
+    font-size: 4vw;
+    color: #313131;
+  }
+  .body .formulario .submit .inputContainer .messageContainer {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    margin-right: 0vw;
+  }
+  .body .formulario .submit .inputContainer .messageContainer .warning {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 4vw;
+    font-style: oblique;
+    background: none;
+    font-size: 3vw;
+  }
+  .body .formulario .submit .inputContainer .warningImage {
+    width: 4vw;
+    height: 4vw;
+    margin-top: -16vw;
+    margin-left: 78vw;
   }
   .body .formulario .submit .buttonSubmit {
     text-decoration: none;
     color: #ffffff;
     font-size: 4vw;
     background-color: #fb5859;
-    padding: 1vw 2.4vw;
-    border-radius: 2vw;
+    padding: 1.9vw 2.4vw;
+    border-radius: 1vw;
     border: 1px solid #fb5859;
     -webkit-transition: .3s;
     transition: .3s;
     -webkit-box-shadow: -1px 3px 23px 4px rgba(0, 0, 0, 0.17);
     box-shadow: -1px 3px 23px 4px rgba(0, 0, 0, 0.17);
     width: 80vw;
-    height: 6vw;
+    height: auto;
     margin-top: 5vw;
+    margin-left: 0vw;
     text-align: center;
   }
   .body .formulario .submit .buttonSubmit:hover {

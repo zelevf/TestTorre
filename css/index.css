@@ -699,6 +699,7 @@
     margin: auto;
     vertical-align: center;
     padding: 1vw 0vw;
+    cursor: pointer;
   }
   .body .faq .faqAndAnswers .faqAndAnswersContainer .questionContainer .questions {
     display: -webkit-box;
@@ -828,29 +829,75 @@
     display: -ms-flexbox;
     display: flex;
     color: #ffffff;
-    margin: auto;
+    margin: 0vw auto;
     padding: 1vw 0vw;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
-  .body .formulario .submit .inputSubmit {
+  .body .formulario .submit .inputContainer {
+    border-radius: 0px 0px 1vw 1vw;
+    -moz-border-radius: 0px 0px 1vw 1vw;
+    -webkit-border-radius: 0px 0px 1vw 1vw;
+  }
+  .body .formulario .submit .inputContainer .inputSubmit {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 20vw;
-    margin-right: 1vw;
+    height: 3.15vw;
     border-radius: .3vw;
     background: white;
-    border: 1px solid #d1d1d1;
+    border: 1px solid #61636f;
     border-radius: 5px 5px 5px 5px;
-    color: #d3d3d3;
-    font-size: 12px;
     padding: 0vw 2vw;
+    font-size: 1vw;
+    color: #313131;
+  }
+  .body .formulario .submit .inputContainer .messageContainer {
+    width: 100%;
+    position: absolute;
+    margin-right: 1vw;
+  }
+  .body .formulario .submit .inputContainer .messageContainer .warning {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 2vw;
+    font-style: oblique;
+    background: none;
+    font-size: 1vw;
+  }
+  .body .formulario .submit .inputContainer .warningImage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    position: absolute;
+    width: 1.3vw;
+    height: 1.3vw;
+    margin-top: -5.6vw;
+    margin-left: 21vw;
   }
   .body .formulario .submit .buttonSubmit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0vw auto;
+    height: 1.2vw;
     text-decoration: none;
     color: #ffffff;
     font-size: 1vw;
     background-color: #fb5859;
-    padding: .8vw 2.4vw;
+    margin-left: 1vw;
+    padding: .9vw 2.4vw;
     border-radius: .5vw;
     border: 1px solid #fb5859;
     -webkit-transition: .3s;
