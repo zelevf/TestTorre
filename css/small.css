@@ -906,7 +906,6 @@
     transition: .3s;
   }
   .body .footer {
-    background: #242946;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -914,16 +913,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: relative;
-    width: 100%;
     height: auto;
-    z-index: 5;
-    margin: 0vw;
     padding: 5vw 0vw;
   }
   .body .footer .footerInfo {
@@ -935,8 +925,10 @@
         -ms-flex-direction: column;
             flex-direction: column;
     position: relative;
-    margin: auto 0vw;
     vertical-align: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .body .footer .footerInfo .empresaFooter {
     display: -webkit-box;
@@ -953,12 +945,43 @@
     text-decoration: none;
     z-index: 1;
     margin: auto 0vw;
+    padding: 4vw 0vw;
   }
-  .body .footer .footerInfo .empresaFooter a {
-    margin: 2vw 0vw;
+  .body .footer .footerInfo .empresaFooter .linkBookmark {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0vw 0vw;
   }
-  .body .footer .footerInfo .empresaFooter a img {
+  .body .footer .footerInfo .empresaFooter .linkBookmark .logoBookmark {
     color: #ffffff;
+    height: 6.7vw;
+    width: 46vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    text-align: center;
+  }
+  .body .footer .footerInfo .navegacionFooter {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: auto;
   }
   .body .footer .footerInfo .navegacionFooter .listaFooter {
     display: -webkit-box;
@@ -968,40 +991,66 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
-    margin: 0vw;
-    padding: 2vw 0vw;
+    margin: auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-left: 0vw;
+  }
+  .body .footer .footerInfo .navegacionFooter .listaFooter li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    font-size: 4vw;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .body .footer .footerInfo .navegacionFooter .listaFooter li {
-    list-style: none;
-    width: 100%;
-    font-size: 5vw;
-    margin: auto;
-    text-align: center;
+    margin-left: 0vw;
     padding: 2vw 0vw;
   }
-  .body .footer .footerInfo .navegacionFooter .listaFooter li a {
+  .body .footer .footerInfo .navegacionFooter .listaFooter li .enlaceNav {
     color: #ffffff;
     text-decoration: none;
-    font-size: 3.6vw;
-    padding: 2vw 0vw;
+    padding: .3vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
   }
   .body .footer .rrss {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 30%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 4vw 0vw;
+  }
+  .body .footer .rrss .rrssLink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .body .footer .rrss a {
-    margin-left: 2vw;
-  }
-  .body .footer .rrss a img {
-    padding: 4vw;
+  .body .footer .rrss .rrssLink .rrssImage {
+    height: 6.5vw;
+    width: 6.5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
   }
   .body .titles {
     font-size: 5vw;

@@ -931,15 +931,16 @@
     height: 4vw;
     z-index: 5;
     margin: 0vw;
-    padding: 0vw;
   }
   .body .footer .footerInfo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     position: relative;
-    margin: auto 0vw;
     vertical-align: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .body .footer .footerInfo .empresaFooter {
     display: -webkit-box;
@@ -950,39 +951,122 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-decoration: none;
     z-index: 1;
     margin: auto 0vw;
+    padding: 0vw 2vw;
   }
-  .body .footer .footerInfo .empresaFooter a path {
+  .body .footer .footerInfo .empresaFooter .linkBookmark {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .body .footer .footerInfo .empresaFooter .linkBookmark .logoBookmark {
     color: #ffffff;
+    height: 1.8vw;
+    width: 11vw;
+  }
+  .body .footer .footerInfo .navegacionFooter {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: auto;
   }
   .body .footer .footerInfo .navegacionFooter .listaFooter {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
-    margin-left: 2vw;
+    margin: auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-left: 0vw;
   }
   .body .footer .footerInfo .navegacionFooter .listaFooter li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     list-style: none;
-    width: 100%;
     font-size: 1vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 3vw;
   }
-  .body .footer .footerInfo .navegacionFooter .listaFooter li a {
+  .body .footer .footerInfo .navegacionFooter .listaFooter li .enlaceNav {
     color: #ffffff;
     text-decoration: none;
+    padding: .3vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .body .footer .footerInfo .navegacionFooter .listaFooter li .enlaceNav:hover {
+    color: #fb5859;
+    -webkit-transition: .3s;
+    transition: .3s;
   }
   .body .footer .rrss {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 7vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  .body .footer .rrss a {
-    margin-left: 2vw;
+  .body .footer .rrss .rrssLink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    vertical-align: center;
+  }
+  .body .footer .rrss .rrssLink .rrssImage {
+    height: 1.7vw;
+    width: 1.7vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+  }
+  .body .footer .rrss .rrssLink .rrssImage .rrssIcon {
+    fill: #ffffff;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .body .footer .rrss .rrssLink .rrssImage:hover .rrssIcon {
+    fill: #fb5859;
+    -webkit-transition: .3s;
+    transition: .3s;
   }
   .body .titles {
     font-size: 2vw;
